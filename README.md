@@ -43,6 +43,13 @@ python scripts\deploy.py
 aws cloudformation deploy --stack-name my-secure-bucket-stack --template-file templates/secure-s3-bucket.yml --capabilities CAPABILITY_NAMED_IAM
 ```
 
+## Cleanup
+To delete the CloudFormation stack and clean up all resources:
+```bash
+python scripts/cleanup.py
+```
+
+
 ## Repository Structure
 
 templates/  
@@ -66,4 +73,5 @@ README.md                    # Project overview and instructions
 
 ## Author
 [Sam Russell] – <russell-s@comcast.net>
+
 [GitHub Profile](https://github.com/samruss824)
