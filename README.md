@@ -10,7 +10,6 @@ This project demonstrates how to deploy a secure AWS S3 bucket using CloudFormat
 - Uses CloudFormation for infrastructure as code
 - Includes deployment scripts for **Windows (.bat)** and **Python (cross-platform)**
 
-
 ## Prerequisites
 
 - AWS CLI configured with appropriate permissions
@@ -24,28 +23,37 @@ This project demonstrates how to deploy a secure AWS S3 bucket using CloudFormat
    ```bash
    git clone https://github.com/samruss824/secure-s3-bucket-cfn.git
    cd secure-s3-bucket-cfn
+   ```
    
-   ### 2. Deploy the CloudFormation stack:
+### 2. Deploy the CloudFormation stack:
    You have multiple options to deploy the secure S3 bucket:
 
-   #### Option A: Using the Python script (cross-platform)
-   '''bash
-    python scripts\deploy.py
-
-    #### Option B: Using the Windows batch script
-    ./scripts/deploy.bat
+#### Option A: Using the Python script (cross-platform)
+```bash
+python scripts\deploy.py
+```
     
-    #### Option C: Manually using the AWS CLI
-    aws cloudformation deploy --stack-name my-secure-bucket-stack --template-file templates/secure-s3-bucket.yml --capabilities CAPABILITY_NAMED_IAM
+#### Option B: Using the Windows batch script
+```bash
+./scripts/deploy.bat
+```
+
+#### Option C: Manually using the AWS CLI
+```bash
+aws cloudformation deploy --stack-name my-secure-bucket-stack --template-file templates/secure-s3-bucket.yml --capabilities CAPABILITY_NAMED_IAM
+```
 
 ## Repository Structure
-├── templates/
-│   └── secure-s3-bucket.yml     # CloudFormation template for secure S3 bucket
-├── scripts/
-│   └── deploy.bat               # Deployment script for Windows
-│   └── deploy.py                # Cross-platform Python deployment script
-├── README.md                    # Project overview and instructions
-└── .gitignore                   # Git ignore rules
+templates/
+└── secure-s3-bucket.yml     # CloudFormation template for secure S3 bucket
+
+scripts/
+├── deploy.bat               # Deployment script for Windows
+└── deploy.py                # Cross-platform Python deployment script
+
+README.md                    # Project overview and instructions
+.gitignore                   # Git ignore rules
+
 
 ## Future Enhancements
 - Add lifecycle policies for object management
@@ -54,5 +62,5 @@ This project demonstrates how to deploy a secure AWS S3 bucket using CloudFormat
 - Add Tines integration for workflow automation
 
 ## Author
-[Sam Russell] – [russell-s@comcast.net]
+[Sam Russell] – <russell-s@comcast.net>
 [GitHub Profile](https://github.com/samruss824)
