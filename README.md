@@ -44,15 +44,18 @@ aws cloudformation deploy --stack-name my-secure-bucket-stack --template-file te
 ```
 
 ## Repository Structure
-templates/
+
+templates/  
 └── secure-s3-bucket.yml     # CloudFormation template for secure S3 bucket
 
-scripts/
-├── deploy.bat               # Deployment script for Windows
+scripts/  
+├── deploy.bat               # Deployment script for Windows  
 └── deploy.py                # Cross-platform Python deployment script
 
-README.md                    # Project overview and instructions
+README.md                    # Project overview and instructions  
 .gitignore                   # Git ignore rules
+
+
 
 
 ## Future Enhancements
